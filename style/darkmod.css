@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-color: #333333;
+  }
+  
+  .container {
+    width: 400px;
+    height: 580px;
+    background-color: #333333;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  
+    border: 1px solid rgb(27, 27, 27);
+    border-radius: 15px;
+    box-shadow: 25px 15px 35px rgba(0, 0, 0, 0.548), -15px -15px 25px #1b1b1bbb,
+      35px 35px 100px #1f1f1f;
+  }
+  
+  .display {
+    background-color: #a7af7c;
+    font-size: 2rem;
+    height: 60px;
+    padding: 15px;
+    margin: 25px;
+    border: 3px solid black;
+    border-radius: 15px;
+    overflow:hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .button {
+    /* width: 100%; */
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+  
+  .key {
+    user-select: none;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    line-height: 200%;
+    color: white;
+    font-size: 2em;
+    font-weight: 900;
+    background: linear-gradient(to right, #323232, #4b4b4b);
+    z-index: 10;
+    border-radius: 10px;
+    box-shadow: 0px 5px 2px #2c2c2c, 3px 5px 2px #2c2c2c, 3px -1px 2px #2c2c2c,
+      0px -1px 2px #2c2c2c, 0px 9px 0px #2c2c2c, 6px 9px 0px #2c2c2c,
+      6px -2px 0px #2c2c2c, 0px -2px 0px #2c2c2c, 5px -2px 0px #2c2c2c,
+      -2px -2px 0px #2c2c2c, -2px 9px 0px #2c2c2c, 0px 11px 0px black,
+      5px 11px 0px black, 8px 11px 0px black, 8px 0px 0px black,
+      0px -4px 0px black, 8px -4px 0 black, -4px -4px 0px black, -4px 11px 0 black,
+      3px 15px 25px #000000;
+    transition: all 0.1s;
+  }
+  
+  #c {
+    background: linear-gradient(to right, #ff0408, #ff5753);
+    /* grid-column-start: 1; */
+    /* grid-column-end: 3; */
+    /* width: 150px; */
+    box-shadow: 0px 5px 2px #ce0703, 3px 5px 2px #ce0703, 3px -1px 2px #ce0703,
+      0px -1px 2px #ce0703, 0px 9px 0px #ce0603, 6px 9px 0px #ce0603,
+      6px -2px 0px #ce0603, 0px -2px 0px #ce0603, 5px -2px 0px #ce0603,
+      -2px -2px 0px #ce0603, -2px 9px 0px #ce0603, 0px 11px 0px black,
+      5px 11px 0px black, 8px 11px 0px black, 8px 0px 0px black,
+      0px -4px 0px black, 8px -4px 0 black, -4px -4px 0px black, -4px 11px 0 black,
+      3px 15px 25px #000000;
+  }
+  
+  #plus {
+    grid-column: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    height: 135px;
+    line-height: 450%;
+  }
+  
+  #ac{
+      background: linear-gradient(to right, #1d80ca, #69b7fa);
+    box-shadow: 0px 5px 2px #3281c7, 3px 5px 2px #3281c7, 3px -1px 2px #3281c7,
+      0px -1px 2px #3281c7, 0px 9px 0px #1d6db1, 6px 9px 0px #1d6db1,
+      6px -2px 0px #1d6db1, 0px -2px 0px #1d6db1, 5px -2px 0px #1d6db1,
+      -2px -2px 0px #1d6db1, -2px 9px 0px #1d6db1, 0px 11px 0px black,
+      5px 11px 0px black, 8px 11px 0px black, 8px 0px 0px black,
+      0px -4px 0px black, 8px -4px 0 black, -4px -4px 0px black, -4px 11px 0 black,
+      3px 15px 25px #000000;
+  }
+  
+  #equal {
+    background: linear-gradient(to right, #1d80ca, #69b7fa);
+    box-shadow: 0px 5px 2px #3281c7, 3px 5px 2px #3281c7, 3px -1px 2px #3281c7,
+      0px -1px 2px #3281c7, 0px 9px 0px #1d6db1, 6px 9px 0px #1d6db1,
+      6px -2px 0px #1d6db1, 0px -2px 0px #1d6db1, 5px -2px 0px #1d6db1,
+      -2px -2px 0px #1d6db1, -2px 9px 0px #1d6db1, 0px 11px 0px black,
+      5px 11px 0px black, 8px 11px 0px black, 8px 0px 0px black,
+      0px -4px 0px black, 8px -4px 0 black, -4px -4px 0px black, -4px 11px 0 black,
+      3px 15px 25px #000000;
+  }
+  
+  .key:active {
+    width: 50px;
+    height: 50px;
+    line-height: 200%;
+    font-size: 1.5em;
+    box-shadow: 0px 5px 2px #2c2c2c, 3px 5px 2px #2c2c2c, 3px -1px 2px #2c2c2c,
+      0px -1px 2px #2c2c2c, 0px 7px 0px #2c2c2c, 4px 7px 0px #2c2c2c,
+      4px 0px 0px #2c2c2c, 0px 0px 0px #2c2c2c, 3px 0px 0px #2c2c2c,
+      0px 0px 0px #2c2c2c, 0px 7px 0px #2c2c2c, 0px 8px 0px black,
+      2px 8px 0px black, 5px 8px 0px black, 5px 0px 0px black, 0px -1px 0px black,
+      5px -1px 0 black, -1px -1px 0px black, -1px 8px 0 black,
+      3px 15px 25px #000000;
+  }
+  
+  
+  #plus:active {
+    width: 50px;
+    height: 130px;
+    line-height: 500%;
+    font-size: 1.5em;
+    box-shadow: 0px 5px 2px #2c2c2c, 3px 5px 2px #2c2c2c, 3px -1px 2px #2c2c2c,
+      0px -1px 2px #2c2c2c, 0px 7px 0px #2c2c2c, 4px 7px 0px #2c2c2c,
+      4px 0px 0px #2c2c2c, 0px 0px 0px #2c2c2c, 3px 0px 0px #2c2c2c,
+      0px 0px 0px #2c2c2c, 0px 7px 0px #2c2c2c, 0px 8px 0px black,
+      2px 8px 0px black, 5px 8px 0px black, 5px 0px 0px black, 0px -1px 0px black,
+      5px -1px 0 black, -1px -1px 0px black, -1px 8px 0 black,
+      3px 15px 25px #000000;
+  }
+  .buttons{
+      display: flex;
+      justify-content: center;
+  }
+  #mode {
+      position: fixed;
+      top: 50px;
+      right: 50px;
+      background-color: #ffffff;
+      width: 80px;
+      height: 80px;
+      font-size: 2.5em;
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 5px 5px 9px #ffffff,
+                  -5px 0px 9px #ffffff,
+                  0px -5px 9px #ffffff;
+      transition: all .5s;
+  }
+  #mode:hover{
+      font-size: 3rem;
+  }
