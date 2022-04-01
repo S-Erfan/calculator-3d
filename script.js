@@ -13,7 +13,7 @@ function app(event){
     }
 };
 // btns clear
-const clear = document.getElementById("c");
+const clear = document.getElementById("ac");
 clear.removeEventListener("click",app);
 clear.addEventListener("click",clearDisplay);
 
@@ -21,7 +21,7 @@ function clearDisplay(){
     display.innerHTML = 0;
 };
 
-const aClear = document.getElementById("ac");
+const aClear = document.getElementById("c");
 aClear.removeEventListener("click",app);
 aClear.addEventListener("click",lastClear);
 
